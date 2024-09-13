@@ -1,0 +1,420 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Maintain dark background */
+    color: #f9f9f9; /* Light text color for contrast */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Allows main content to expand and push footer down */
+}
+/* Links */
+a {
+    color: #ffcc00; /* Yellow links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background for footer */
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #444; /* Slightly lighter border */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #f9f9f9; /* Light text color */
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000; /* Black background */
+    color: #f9f9f9; /* Light text color */
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-right: 1rem;
+}
+
+nav .nav-links a {
+    color: #f9f9f9; /* Light text color */
+    font-size: 1rem;
+}
+
+nav .nav-links a:hover {
+    color: #ffcc00; /* Yellow on hover */
+}
+
+/* Tags inside Navbar */
+nav .tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .tags .tag {
+    background-color: #444; /* Dark grey background */
+    color: #ffcc00; /* Yellow text */
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 4px;
+}
+
+nav .tags .tag:hover {
+    background-color: #555; /* Slightly lighter grey */
+}
+
+/* Form Styles for Auth.js */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark background */
+    padding: 2rem;
+}
+
+
+.auth-container {
+    background-color: #222; /* Slightly lighter dark background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+}
+
+
+h1 {
+    color: #ffcc00; /* Yellow heading for contrast */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #444; /* Dark border */
+    background-color: #333; /* Dark input background */
+    color: #f9f9f9; /* Light text color */
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ffcc00; /* Yellow focus border */
+}
+
+button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #ffcc00; /* Yellow button */
+    color: #1a1a1a; /* Dark text for contrast */
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+button[type="submit"]:active {
+    background-color: #cc9900; /* Even darker yellow on click */
+}
+
+/* Error and Success Messages */
+p.error-message {
+    color: #ff6666; /* Light red for errors */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p.success-message {
+    color: #66ff66; /* Light green for success */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Home Page Styles */
+.home-page {
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark background */
+    padding: 2rem 1rem; /* Padding for smaller screens */
+    color: #f9f9f9; /* Light text color */
+}
+
+.create-post-button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.create-post-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffcc00; /* Yellow button */
+    color: #1a1a1a; /* Dark text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.create-post-button:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+.create-post-button:active {
+    background-color: #cc9900; /* Even darker yellow on click */
+}
+
+/* Single Post Page Styles */
+.single-post-page {
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark background */
+    padding: 2rem;
+    color: #f9f9f9; /* Light text color */
+}
+
+.post-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #222; /* Slightly lighter dark background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.post-detail h1 {
+    color: #ffcc00; /* Yellow heading for contrast */
+    margin-bottom: 1rem;
+}
+
+.post-detail p {
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.button-container a, .button-container button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container a {
+    color: #f9f9f9; /* Light text color */
+    background-color: #ffcc00; /* Yellow background */
+    text-decoration: none;
+}
+
+.button-container a:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+.button-container button {
+    background-color: #ff6666; /* Light red for delete button */
+    color: #f9f9f9; /* Light text color */
+}
+
+.button-container button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .auth-container,
+    .form-container,
+    .post-detail {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"],
+    .create-post-button {
+        font-size: 0.875rem;
+    }
+    
+    .post-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .post-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .post-card p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-container,
+    .form-container,
+    .post-detail {
+        padding: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.125rem;
+    }
+
+    button[type="submit"],
+    .create-post-button {
+        font-size: 0.75rem;
+    }
+    
+    .post-card {
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .post-card h2 {
+        font-size: 1.125rem;
+    }
+
+    .post-card p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Additional Styles */
+.logout-button {
+    background-color: #f44336; /* Red color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: auto; /* Reset width to auto */
+    max-width: 200px; /* Set a max width if desired */
+    display: inline-block; /* Make sure it only takes up as much width as needed */
+}
+
+.logout-button:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+.create-edit-post-form input, 
+.create-edit-post-form textarea {
+    width: 100%; /* Makes the inputs take up the full width */
+    padding: 10px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.create-edit-post-form button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.create-edit-post-form button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.create-edit-post-form {
+    max-width: 600px; /* Adjust the max width as needed */
+    margin: 0 auto; /* Center the form */
+    padding: 1rem; /* Padding around the form */
+}
+
+.create-edit-post-form input, 
+.create-edit-post-form textarea {
+    width: 100%; /* Full width within the container */
+    padding: 10px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+.single-post-page {
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark background */
+    padding: 2rem;
+    color: #f9f9f9; /* Light text color */
+}
+
+.post-detail {
+    max-width: 800px; /* Limit the width of the post detail */
+    margin: 0 auto; /* Center the post detail */
+    background-color: #222; /* Slightly lighter dark background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+/* Form Styles for Auth.js */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1c1c1c; /* Slightly different dark background */
+    padding: 2rem;
+}
+
+.auth-container {
+    background-color: #2c2c2c; /* Slightly lighter dark background */
+    padding: 2rem;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* More pronounced shadow */
+    max-width: 400px; /* Set a maximum width */
+    width: 100%; /* Full width within the maximum limit */
+    margin: 0 auto; /* Center the container */
+}

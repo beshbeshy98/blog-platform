@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  max-width: 1200px; /* Control max width of container */
+  margin: 0 auto; /* Center container */
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%; /* Ensure it takes up full width */
+  box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+
+.App-logo {
+  height: 40vmin;
+  width: auto; /* Adjust width as needed */
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+  display: inline-block; /* Make it fit content width */
+  margin: 1rem; /* Add margin to control spacing */
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Adjust font size */
+  }
+
+  .App-logo {
+    height: 30vmin; /* Adjust logo size */
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.App-logo {
+  padding: 0;
+  margin: 0;
+}
